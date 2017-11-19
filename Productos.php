@@ -1,121 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<?php
+require_once 'inc/header.php';
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <!-- Icono en la pagina -->
-    <link rel="shortcut icon" href="img/logo.ico">
-    <!-- Font Awesome CDN -->
-    <script src="https://use.fontawesome.com/025d1f53df.js"></script>
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-<title>Uniformes Faena</title>
-  </head>
-  <body>
-    <div class="contenedor">
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="imagen col-xs-6 col-sm-6 col-lg-6">
-            <img src="img/logo2.png" alt="LogoFaena">
-          </div>
-          <div class=" col-xs-6 col-sm-6 col-md-6">
-             <ul class="social-header list-inline text-xs-right">
-               <li class="list-inline-item">
-                <a href="#">
-                    <span class="fa-stack fa-lg hidden-xs-down">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-               <li class="list-inline-item">
-                <a href="#">
-                    <span class="fa-stack fa-lg hidden-xs-down">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-               <li class="list-inline-item">
-                <a href="#">
-                    <span class="fa-stack fa-lg hidden-xs-down">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                <span id="btnlogin" class=""><button type="button" data-toggle="modal" data-target="#IniciarSecion" class="btn btn-success "><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Iniciar Sesión</button></span>
-              </li>
-             </ul>
-          </div>
-        </div>
-        </div>
-
-        <nav class="navbar  navbar-static-top" role="navigation">
-      <div class="container">
-
-       <div class="navbar-header">
-        
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
-          <span class="sr-only"> Desplegar  /  ocultar Menu</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-
-        </button>
-        <a href="#" class="navbar-brand"></a>
-
-      </div>
-      <!--MENU-->
-      <div class="collapse navbar-collapse pull-right" id="navegacion">
-        <ul class="nav navbar-nav">
-                   <li><a href="index.html">Inicio</a></li>
-                   <li><a href="Productos.html">Productos</a></li>
-                   <li><a href="Escolar.html">Escolar</a></li>
-                   <li><a href="DondeEstamos.html">Dónde estamos</a></li>
-                   <li><a href="Contacto.html">Contacto</a></li>
-                   <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Registro</a>
-                     <ul class="dropdown-menu">
-                     <li><a href="#" data-toggle="modal" data-target="#RegistroUsuario">Usuario</a></li>
-                     <li><a href="#" data-toggle="modal" data-target="#RegistroDomicilio">Domicilio</a></li>
-                     <li><a href="#" data-toggle="modal" data-target="#RegistroProducto">Producto</a></li>
-                   </ul>
-                   </li>
-                 -->
-   
-        </ul>
-                   <form class="navbar-form navbar-right">
-                   <div class="form-group col-xs-9 col-sm-9 col-md-9 col-lg-9"><input type="text" class="form-control"></div>
-                   <button type="submit" class="btn btn-default"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
-                 </form>
+?>
 
 
-      </div>
+ <section id="InicioSecion">
 
-
-    </div>
-      
-    </nav>
-
-
-    </header>
-    
-  </body>
-     <section id="InicioSecion">
-
-    <div class="modal fade" id="IniciarSecion"  role="dialog">
+      <div class="modal fade" id="IniciarSecion"  role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <form class="form-horizontal">
@@ -123,7 +14,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 align="center">Iniciar Sesión</h4>
           </div>
-          <div class="modal-body"> 
+          <div class="modal-body">
             <div class="form-group">
               <label for="SecionUsuario" class="col-lg-3  col-sm-3 hidden-sm-down control-label">Usuario:</label>
                 <div class="col-lg-9 col-sm-9 col-xs-12">
@@ -143,7 +34,7 @@
                   <button type="button" id="BotonOlvidar"  class="btn btn-primary" data-toggle="modal" data-target="#OlvideContraseña"  data-dismiss="modal">¿Olvido su contraseña?</button>
                 </div>
                 </div>
-               
+
             </div>
           </div>
 
@@ -152,10 +43,10 @@
             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
               <button type="button"  class="btn btn-primary"  data-dismiss="modal">Iniciar</button>
               <button type="button" class="btn btn-danger"  data-dismiss="modal">Cerrar</button>
-            
+
             </div>
-            
-            
+
+
           </div>
           </form>
       </div>
@@ -172,7 +63,7 @@
             <button type="button" class="close " data-dismiss="modal" aria-hidden="true">&times;</button>
             <h3 align="center">Olvidastes la Contraseña</h3>
           </div>
-          <div class="modal-body"> 
+          <div class="modal-body">
             <div class="form-group">
               <label for="SecionUsuario" class="col-lg-3  col-sm-3 hidden-sm-down control-label">Usuario:</label>
                 <div class="col-lg-9 col-sm-9 col-xs-12">
@@ -187,25 +78,25 @@
                 <div class="col-lg-9 col-sm-9 col-xs-12">
                   <input type="text" class="form-control" id="SesionOlvideEmail" placeholder="Correo" name="">
                 </div>
-                
+
             </div>
           </div>
 
 
           <div class="modal-footer" align="center" id="BotonesInicio">
             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-              <button type="button"  class="btn btn-primary"  data-dismiss="modal">Iniciar</button>
+              <button type="button"  class="btn btn-primary"  data-dismiss="modal">Enviar Contraseña</button>
               <button type="button" class="btn btn-danger"  data-dismiss="modal">Cerrar</button>
-            
+
             </div>
-            
-            
+
+
           </div>
           </form>
       </div>
     </div>
   </div>
-  
+
 </section>
 
   <section id="RegistrarUsuario">
@@ -220,7 +111,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 align="center">Registrar Cuenta</h4>
           </div>
-          <div class="modal-body"> 
+          <div class="modal-body">
             <div class="form-group">
               <label for="SesionNombre" class="col-lg-3 col-md-3 col-sm-3 hidden-sm-down control-label">Nombre:</label>
                 <div class=" col-md-9 col-lg-9 col-sm-9 col-xs-12">
@@ -253,22 +144,22 @@
             </div>
 
              <div class="form-group">
-              
+
                 <div class="col-lg-4 col-sm-4 col-xs-4">
                   <input type="checkbox" class="form-control" id="CheckBoxCondiciones">
                 </div>
                 <label for="CheckBoxCondiciones" class="col-lg-8 col-sm-8 col-xs-8" > Acepto las condicones del servicio de Dropbox</label>
             </div>
-          
+
 
        <div class="modal-footer" id="BotonesInicio">
             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
               <button type="button"  class="btn btn-primary"  data-dismiss="modal">Iniciar</button>
               <button type="button" class="btn btn-danger"  data-dismiss="modal">Cerrar</button>
-            
+
             </div>
-            
-            
+
+
           </div>
           </form>
         </div>
@@ -287,7 +178,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 align="center">Registrar Domicilio</h4>
           </div>
-          <div class="modal-body"> 
+          <div class="modal-body">
             <div class="form-group">
               <label for="SesionCalle" class="col-lg-2 control-label" >Calle:</label>
                 <div class="col-lg-12">
@@ -324,50 +215,50 @@
               <div class="pull-left">
                 <label for="SesionCiudad" class="col-lg-12 control-label" >Ciudad:</label>
               </div>
-              
+
               <div class="col-sm-12">
-            <SELECT NAME="ComboCiudad" SIZE=1 class="form-control"> 
+            <SELECT NAME="ComboCiudad" SIZE=1 class="form-control">
                 <OPTION VALUE="link pagina 1">Ciudad</OPTION>
                 <OPTION VALUE="link pagina 2">opcion2</OPTION>
                 <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION> 
-            </SELECT> 
+                <OPTION VALUE="link pagina 4">opcion4</OPTION>
+            </SELECT>
               </div>
-          
+
             </div>
             <div class="form-group">
               <div class="pull-left">
                 <label for="SesionMunicipio" class="col-lg-12 control-label" >Municipio:</label>
               </div>
-              
+
               <div class="col-sm-12">
-            <SELECT NAME="ComboMunicipio" SIZE=1 class="form-control"> 
+            <SELECT NAME="ComboMunicipio" SIZE=1 class="form-control">
                 <OPTION VALUE="link pagina 1">Municipio</OPTION>
                 <OPTION VALUE="link pagina 2">opcion2</OPTION>
                 <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION> 
-            </SELECT> 
+                <OPTION VALUE="link pagina 4">opcion4</OPTION>
+            </SELECT>
               </div>
-          
+
             </div>
             <div class="form-group">
               <div class="pull-left">
                 <label for="SesionEstado" class="col-lg-12 control-label" >Estado:</label>
               </div>
-              
+
               <div class="col-sm-12">
-            <SELECT NAME="ComboEstado" SIZE=1 class="form-control"> 
+            <SELECT NAME="ComboEstado" SIZE=1 class="form-control">
                 <OPTION VALUE="link pagina 1">Estado</OPTION>
                 <OPTION VALUE="link pagina 2">opcion2</OPTION>
                 <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION> 
-            </SELECT> 
+                <OPTION VALUE="link pagina 4">opcion4</OPTION>
+            </SELECT>
               </div>
               <br>
               <br>
-          
+
             </div>
-          
+
 
           <div class="modal-footer" id="BotonesInicio">
             <div class="pull-left">
@@ -392,7 +283,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 align="center">Registrar Productos</h4>
           </div>
-          <div class="modal-body"> 
+          <div class="modal-body">
             <div class="form-group">
               <div class="pull-left">
                 <label for="SesionNombreProducto" class="col-lg-12 control-label" >Nombre del Producto:</label>
@@ -408,22 +299,22 @@
               <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
                 <label for="SesionTalla" class=" control-label" >Talla:</label>
               </div>
-              
+
               <div class="col-lg-6 col-sm-6 col-xs-6 pull-left">
-            <SELECT NAME="ComboTipoPrenda" SIZE=1 class="form-control"> 
+            <SELECT NAME="ComboTipoPrenda" SIZE=1 class="form-control">
                 <OPTION VALUE="link pagina 1">Seleccione...</OPTION>
                 <OPTION VALUE="link pagina 2">opcion2</OPTION>
                 <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION> 
-            </SELECT> 
+                <OPTION VALUE="link pagina 4">opcion4</OPTION>
+            </SELECT>
               </div>
                 <div class="col-lg-6 col-sm-6 col-xs-6 pull-left">
-            <SELECT NAME="ComboTalla" SIZE=1 class="form-control"> 
+            <SELECT NAME="ComboTalla" SIZE=1 class="form-control">
                 <OPTION VALUE="link pagina 1">Seleccione...</OPTION>
                 <OPTION VALUE="link pagina 2">opcion2</OPTION>
                 <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION> 
-            </SELECT> 
+                <OPTION VALUE="link pagina 4">opcion4</OPTION>
+            </SELECT>
               </div>
             </div>
             <div class="form-group">
@@ -433,26 +324,26 @@
               <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
                 <label for="SesionColor" class=" control-label" >Color:</label>
               </div>
-              
+
               <div class="col-lg-6 col-sm-6 col-xs-6 pull-left">
-            <SELECT NAME="ComboSexo" SIZE=1 class="form-control"> 
+            <SELECT NAME="ComboSexo" SIZE=1 class="form-control">
                 <OPTION VALUE="link pagina 1">Seleccione...</OPTION>
                 <OPTION VALUE="link pagina 2">opcion2</OPTION>
                 <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION> 
-            </SELECT> 
+                <OPTION VALUE="link pagina 4">opcion4</OPTION>
+            </SELECT>
               </div>
                 <div class="col-lg-6 col-sm-6 col-xs-6 pull-left">
-            <SELECT NAME="ComboColor" SIZE=1 class="form-control"> 
+            <SELECT NAME="ComboColor" SIZE=1 class="form-control">
                 <OPTION VALUE="link pagina 1">Seleccione...</OPTION>
                 <OPTION VALUE="link pagina 2">opcion2</OPTION>
                 <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION> 
-            </SELECT> 
+                <OPTION VALUE="link pagina 4">opcion4</OPTION>
+            </SELECT>
               </div>
             </div>
             <div class="form-group">
-              
+
               <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
                 <label for="SesionPrecioCosto" class="control-label" >Precio Costo:</label>
               </div>
@@ -474,7 +365,7 @@
 
               <div class="pull-left col-sm-12">
                 <textarea rows="5" cols="60" class="form-control" id="SesionDescripcion">
-                
+
               </textarea>
               </div>
             </div>
@@ -490,7 +381,7 @@
 
           </div>
 
-          
+
 
           <div class="modal-footer" id="BotonesInicio">
             <div class="pull-left">
@@ -502,41 +393,63 @@
         </div>
     </div>
   </div>
-</section>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <section class="MainProductos">
 
-    <script src="js/general.js" type="text/javascript"></script>
-  </body>
-  <footer>
+<article class="post clearfix col-md-6">
+  <a href="" class="thumb pull-left">
+    <img class="img-thumbnail" src="img/Panst.png" alt="">
+  </a>
+  <h2 class="post-title"><a href="#">PANTS</a></h2>
+  <p><span class="post-fecha">1 de Noviembre de 2017</span></p>
+  <p class="post-contenido text-justufy">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <div class="contenedor-botones">
+    <a href="#" class="btn btn-primary"> Entrar</a>
+    <a href="#" class="btn btn-success">Comentario <span class="badge">10</span></a>
+  </div>
+</article>
+<article class="post clearfix col-md-6">
+  <a href="" class="thumb pull-left">
+    <img class="img-thumbnail" src="img/Panst.png" alt="">
+  </a>
+  <h2 class="post-title"><a href="#">PANTS</a></h2>
+  <p><span class="post-fecha">1 de Noviembre de 2017</span></p>
+  <p class="post-contenido text-justufy">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <div class="contenedor-botones col-md-6">
+    <a href="#" class="btn btn-primary"> Entrar</a>
+    <a href="#" class="btn btn-success">Comentario <span class="badge">10</span></a>
+  </div>
+</article>
+<nav>
+  <div class="center-block">
+    <ul class="pagination">
+      <li class="disable"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;<span class="sr-only">Siguiente</span></a></li>
+    </ul>
+  </div>
+</nav>
+  </section>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <strong>Uniformes Faena</strong> &copy;2017 - Todos los derechos reservados. Sitio diseñado por <a href="#">Equipo Uas</a>
-          </div>
-
-          <div class="col-sm-6 text-xs-right">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">Inicio</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Aviso legal</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Cookies</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    
-    </footer>
-</html>
+<?php
+require_once 'inc/footer.php'
+?>

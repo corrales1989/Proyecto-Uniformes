@@ -1,150 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<?php 
+    require_once('inc/header.php');
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <!-- Icono en la pagina -->
-    <link rel="shortcut icon" href="img/logo.ico">
-    <!-- Font Awesome CDN -->
-    <script src="https://use.fontawesome.com/025d1f53df.js"></script>
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-<title>Uniformes Faena</title>
-  </head>
-  <body>
-    <div class="contenedor">
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="imagen col-xs-6 col-sm-6 col-lg-6">
-            <img src="img/logo2.png" alt="LogoFaena">
-          </div>
-          <div class=" col-xs-6 col-sm-6 col-md-6">
-             <ul class="social-header list-inline text-xs-right">
-               <li class="list-inline-item">
-                <a href="#">
-                    <span class="fa-stack fa-lg hidden-xs-down">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-               <li class="list-inline-item">
-                <a href="#">
-                    <span class="fa-stack fa-lg hidden-xs-down">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-               <li class="list-inline-item">
-                <a href="#">
-                    <span class="fa-stack fa-lg hidden-xs-down">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li class="list-inline-item">
-                <span id="btnlogin" class=""><button type="button" data-toggle="modal" data-target="#IniciarSecion" class="btn btn-success "><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Iniciar Sesión</button></span>
-              </li>
-             </ul>
-          </div>
-        </div>
-        </div>
-
-        <nav class="navbar  navbar-static-top" role="navigation">
-      <div class="container">
-
-       <div class="navbar-header">
-        
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
-          <span class="sr-only"> Desplegar  /  ocultar Menu</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-
-        </button>
-        <a href="#" class="navbar-brand"></a>
-
-      </div>
-      <!--MENU-->
-      <div class="collapse navbar-collapse pull-right" id="navegacion">
-        <ul class="nav navbar-nav">
-                   <li><a href="index.html">Inicio</a></li>
-                   <li><a href="Productos.html">Productos</a></li>
-                   <li><a href="Escolar.html">Escolar</a></li>
-                   <li><a href="DondeEstamos.html">Dónde estamos</a></li>
-                   <li><a href="Contacto.html">Contacto</a></li>
-                   <!--<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Registro</a>
-                     <ul class="dropdown-menu">
-                     <li><a href="#" data-toggle="modal" data-target="#RegistroUsuario">Usuario</a></li>
-                     <li><a href="#" data-toggle="modal" data-target="#RegistroDomicilio">Domicilio</a></li>
-                     <li><a href="#" data-toggle="modal" data-target="#RegistroProducto">Producto</a></li>
-                   </ul>
-                   </li>
-                 -->
    
-        </ul>
-                   <form class="navbar-form navbar-right">
-                   <div class="form-group col-xs-9 col-sm-9 col-md-9 col-lg-9"><input type="text" class="form-control"></div>
-                   <button type="submit" class="btn btn-default"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
-                 </form>
+  ?>
 
-
-      </div>
-
-
-    </div>
-      
-    </nav>
-
-
-    </header>
-    <div class="wrapper">
-      <div class="imagencontacto col-sm-12 text-xs-center">
-        <img src="img/contactanos.png">
-      </div>
   
-  
-<div class="half ">
-    <div class="tab">
-      <input id="tab-one" type="checkbox" name="tabs">
-      <label for="tab-one">Correo</label>
-      <div class="tab-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-      </div>
-    </div>
-    <div class="tab">
-      <input id="tab-two" type="checkbox" name="tabs">
-      <label for="tab-two">Telefono</label>
-      <div class="tab-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-      </div>
-    </div>
-    <div class="tab">
-      <input id="tab-three" type="checkbox" name="tabs">
-      <label for="tab-three">Fax</label>
-      <div class="tab-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  </body>
-    <section id="InicioSecion">
+ <section id="InicioSecion">
 
     <div class="modal fade" id="IniciarSecion"  role="dialog">
       <div class="modal-dialog">
@@ -225,7 +86,7 @@
 
           <div class="modal-footer" align="center" id="BotonesInicio">
             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-              <button type="button"  class="btn btn-primary"  data-dismiss="modal">Iniciar</button>
+              <button type="button"  class="btn btn-primary"  data-dismiss="modal">Enviar Contraseña</button>
               <button type="button" class="btn btn-danger"  data-dismiss="modal">Cerrar</button>
             
             </div>
@@ -533,42 +394,6 @@
         </div>
     </div>
   </div>
-</section>
-<!--<footer>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <strong>Uniformes Faena</strong> &copy;2017 - Todos los derechos reservados. Sitio diseñado por <a href="#">Equipo Uas</a>
-          </div>
-
-          <div class="col-sm-6 text-xs-right">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">Inicio</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Aviso legal</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Cookies</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    
-    </footer>-->
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
-    <script src="js/general.js" type="text/javascript"></script>
-  </body>
-   
-</html>
+<?php 
+  require_once('inc/footer.php')
+ ?>
