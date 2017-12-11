@@ -15,7 +15,7 @@ require_once 'inc/header.php';
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img src="img/slider.jpg" alt="First slide">
+              <img src="img/1.jpg" alt="First slide">
 
               <div class="carousel-caption hidden-xs-down col-xs-12 col-sm-12 col-md-12 ">
 
@@ -85,13 +85,13 @@ require_once 'inc/header.php';
 
             <div class="row">
               <div class="col-sm-4">
-                <img src="img/r1.jpg" alt="Imagen 1" class="img-fluid">
+                <img src="img/Filipina1.png" alt="Imagen 1" class="img-fluid">
               </div>
               <div class="col-sm-4">
-                <img src="img/r2.jpg" alt="Imagen 2" class="img-fluid">
+                <img src="img/bata.png" alt="Imagen 2" class="img-fluid">
               </div>
               <div class="col-sm-4">
-                <img src="img/r3.jpg" alt="Imagen 3" class="img-fluid">
+                <img src="img/Panst.jpg" alt="Imagen 3" class="img-fluid">
               </div>
             </div>
 
@@ -285,7 +285,7 @@ require_once 'inc/header.php';
                 <div class="col-lg-4 col-sm-4 col-xs-4">
                   <input type="checkbox" class="form-control" id="CheckBoxCondiciones">
                 </div>
-                <label for="CheckBoxCondiciones" class="col-lg-8 col-sm-8 col-xs-8" > Acepto las condicones del servicio de Dropbox</label>
+                <label for="CheckBoxCondiciones" class="col-lg-8 col-sm-8 col-xs-8" > Acepto las condicones del servicio de la pagina</label>
             </div>
 
 
@@ -408,128 +408,38 @@ require_once 'inc/header.php';
     </div>
   </div>
 </section>
-
-<section id="RegistrarProductos">
-    <div class="modal fade" id="RegistroProducto"  role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <form class="form-horizontal">
-            <br>
-            <br>
+<section id="CarritoCompra">
+  <div class="modal fade bd-example-modal-lg" id="carrito" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+       <form class="form-horizontal">
             <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 align="center">Registrar Productos</h4>
+            <h4 align="center">Carrito</h4>
           </div>
           <div class="modal-body">
-            <div class="form-group">
-              <div class="pull-left">
-                <label for="SesionNombreProducto" class="col-lg-12 control-label" >Nombre del Producto:</label>
-              </div>
-                <div class="col-lg-12">
-                  <input type="text" class="form-control" id="SesionNombreProductoe" placeholder="Nombre Producto" name="">
-                </div>
-            </div>
-            <div class="form-group">
-              <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
-                <label for="SesionTipoPrenda" class="control-label" >Tipo Prenda:</label>
-              </div>
-              <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
-                <label for="SesionTalla" class=" control-label" >Talla:</label>
-              </div>
-
-              <div class="col-lg-6 col-sm-6 col-xs-6 pull-left">
-            <SELECT NAME="ComboTipoPrenda" SIZE=1 class="form-control">
-                <OPTION VALUE="link pagina 1">Seleccione...</OPTION>
-                <OPTION VALUE="link pagina 2">opcion2</OPTION>
-                <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION>
-            </SELECT>
-              </div>
-                <div class="col-lg-6 col-sm-6 col-xs-6 pull-left">
-            <SELECT NAME="ComboTalla" SIZE=1 class="form-control">
-                <OPTION VALUE="link pagina 1">Seleccione...</OPTION>
-                <OPTION VALUE="link pagina 2">opcion2</OPTION>
-                <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION>
-            </SELECT>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
-                <label for="SesionSexo" class="control-label" >Sexo:</label>
-              </div>
-              <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
-                <label for="SesionColor" class=" control-label" >Color:</label>
-              </div>
-
-              <div class="col-lg-6 col-sm-6 col-xs-6 pull-left">
-            <SELECT NAME="ComboSexo" SIZE=1 class="form-control">
-                <OPTION VALUE="link pagina 1">Seleccione...</OPTION>
-                <OPTION VALUE="link pagina 2">opcion2</OPTION>
-                <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION>
-            </SELECT>
-              </div>
-                <div class="col-lg-6 col-sm-6 col-xs-6 pull-left">
-            <SELECT NAME="ComboColor" SIZE=1 class="form-control">
-                <OPTION VALUE="link pagina 1">Seleccione...</OPTION>
-                <OPTION VALUE="link pagina 2">opcion2</OPTION>
-                <OPTION VALUE="link pagina 3">opcion3</OPTION>
-                <OPTION VALUE="link pagina 4">opcion4</OPTION>
-            </SELECT>
-              </div>
-            </div>
-            <div class="form-group">
-
-              <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
-                <label for="SesionPrecioCosto" class="control-label" >Precio Costo:</label>
-              </div>
-               <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
-                <label for="SesionPrecioVenta" class="control-label" >Precio Venta:</label>
-              </div>
-
-              <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
-                <input type="text" class="form-control" id="SesionPrecioCosto" placeholder="" name="">
-              </div>
-               <div class="pull-left col-lg-6 col-sm-6 col-xs-6">
-                <input type="text" class="form-control" id="SesionPrecioVenta" placeholder="" name="">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="pull-left col-sm-12">
-                 <label for="SesionDescripcion" class="control-label" >Descripcion:</label>
-              </div>
-
-              <div class="pull-left col-sm-12">
-                <textarea rows="5" cols="60" class="form-control" id="SesionDescripcion">
-
-              </textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="pull-left col-lg-2 col-sm-2 col-xs-2">
-                 <label for="SesionProveedor" class="control-label" >Proveedor:</label>
-              </div>
-              <div class="pull-left col-lg-10 col-sm-10 col-xs-10">
-                <input type="text" class="form-control" id="SesionProveedor" placeholder="" name="">
-              </div>
-
-            </div>
-
+            aqui va carrito
           </div>
 
 
+          <div class="modal-footer" align="center" id="BotonesInicio">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+              <button type="button"  class="btn btn-primary"  data-dismiss="modal">Comprar</button>
+              <button type="button" class="btn btn-danger"  data-dismiss="modal">Cerrar</button>
 
-          <div class="modal-footer" id="BotonesInicio">
-            <div class="pull-left">
-              <button type="button"  class="btn btn-primary"  data-dismiss="modal">Enviar Registro</button>
             </div>
-            <button type="button" class="btn btn-primary"  data-dismiss="modal">Cancelar</button>
+
+
           </div>
           </form>
-        </div>
+       
     </div>
   </div>
+</div>
+</section>
+
+
+
 
 <?php
 require_once 'inc/footer.php'

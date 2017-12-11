@@ -19,12 +19,26 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/styless.css" type="text/css">
+
+    <!--  -->
+    <script src="js/click.js" type="text/javascript"></script>
+    
 <title>Uniformes Faena</title>
   </head>
   <body>
 
     <div class="contenedor">
     <header>
+         <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navegacion">
+          <span class="sr-only"> Desplegar  /  ocultar Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+        </button>
+         <div class="botoniniciar hidden-md-up pull-right">
+           <span id="btnlogin" class=""><button type="button" data-toggle="modal" data-target="#IniciarSecion" class="btn btn-success "><span class="glyphicon glyphicon-user" aria-hidden="true"></span></button></span>
+      </div>
       <div class="container">
         <div class="row">
           <div class="imagen col-xs-6 col-sm-6 col-lg-6">
@@ -57,7 +71,7 @@
                   </a>
               </li>
               <li class="list-inline-item">
-                <span id="btnlogin" class=""><button type="button" data-toggle="modal" data-target="#IniciarSecion" class="btn btn-success "><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Iniciar Sesión</button></span>
+                <span id="btnlogin" class="hidden-sm-down"><button type="button" data-toggle="modal" data-target="#IniciarSecion" class="btn btn-success "><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Iniciar Sesión</button></span>
               </li>
              </ul>
           </div>
@@ -68,19 +82,21 @@
       <div class="container">
 
        <div class="navbar-header">
+        <form>
         <div class="hidden-md-up">
-          <span id="btnCarrito" class="pull-left"><button type="button" data-target="#IniciarSecion" class="btn"><span class="fa fa-cart-plus fa-2x" aria-hidden="true"></span> Mis articulos<span class="badge">2</span></button></span>
-                 </form>
+          <span id="btnCarrito" class="pull-right"><button type="button" data-target="#IniciarSecion" class="btn"><span class="fa fa-cart-plus fa-2x" aria-hidden="true"></span><span class="badge">2</span>
+        </button></span>
+        <div class="form-group">
+                    <div class="col-sm-7 col-xs-5">
+                       <input type="text" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default" ><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+
+                  </div>
         </div>
+         </form>
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
-          <span class="sr-only"> Desplegar  /  ocultar Menu</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
 
-        </button>
-        <a href="#" class="navbar-brand"></a>
 
       </div>
       <!--MENU-->
@@ -103,28 +119,16 @@
                  <form class="navbar-form navbar-right">
                    <div class="form-group">
                     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-                       <input type="text" class="form-control">
+                       <input type="text" class="form-control hidden-sm-down">
                     </div>
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
-
+                    <button type="submit" class="btn btn-default hidden-sm-down"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
 
                   </div>
-                  <span id="btnCarrito" class="pull-right hidden-sm-down "><button type="button" data-target="#IniciarSecion" class="btn"><span class="fa fa-cart-plus fa-2x" aria-hidden="true"></span> Mis articulos<span class="badge">2</span></button></span>
+                  <span id="btnCarrito" class="pull-right hidden-sm-down "><button type="button" data-target="#carrito" data-toggle="modal" class="btn"><span class="fa fa-cart-plus fa-lg" aria-hidden="true"></span> Mis articulos<span class="badge">2</span></button></span>
+
                  </form>
-
-
-
         </ul>
-
-
-
-
       </div>
-
-
     </div>
-
     </nav>
-
-
     </header>
